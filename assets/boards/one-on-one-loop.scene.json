@@ -1,0 +1,17 @@
+{
+  "canvas": {"width": 1200, "height": 675, "ratio": "16:9", "background": "#FFFFFF", "grid": 8},
+  "intent": {"core_message": "一次 1:1 的价值来自下一次回看", "composition": "axis-flow", "focus_node": "during"},
+  "style": {"theme": "geometry-minimal", "accent_color": "#2F6BFF", "line_weight": 1, "corner_radius": 0},
+  "nodes": [
+    {"id": "before", "type": "plane", "label": "会前准备", "importance": 3},
+    {"id": "during", "type": "circle", "label": "共同沟通", "importance": 5},
+    {"id": "after", "type": "plane", "label": "行动落地", "importance": 4},
+    {"id": "next", "type": "point", "label": "下次回看", "importance": 4}
+  ],
+  "edges": [
+    {"from": "before", "to": "during", "relation": "带入议题"},
+    {"from": "during", "to": "after", "relation": "确认行动"},
+    {"from": "after", "to": "next", "relation": "持续跟进"},
+    {"from": "next", "to": "before", "relation": "重新准备", "style": "dashed"}
+  ]
+}

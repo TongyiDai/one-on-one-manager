@@ -1,0 +1,20 @@
+{
+  "canvas": {"width": 1200, "height": 675, "ratio": "16:9", "background": "#FFFFFF", "grid": 8},
+  "intent": {"core_message": "共同协作材料让 1:1 回到真实工作", "composition": "input-process-output", "focus_node": "context"},
+  "style": {"theme": "geometry-minimal", "accent_color": "#2F6BFF", "line_weight": 1, "corner_radius": 0},
+  "nodes": [
+    {"id": "meetings", "type": "plane", "label": "共同会议", "importance": 2},
+    {"id": "messages", "type": "plane", "label": "共同消息", "importance": 2},
+    {"id": "docs", "type": "plane", "label": "共同文档", "importance": 2},
+    {"id": "work", "type": "plane", "label": "任务与 OKR", "importance": 2},
+    {"id": "context", "type": "cube", "label": "协作上下文", "importance": 5},
+    {"id": "one_on_one", "type": "circle", "label": "1:1 准备", "importance": 4}
+  ],
+  "edges": [
+    {"from": "meetings", "to": "context", "relation": "提供事实"},
+    {"from": "messages", "to": "context", "relation": "提供承诺"},
+    {"from": "docs", "to": "context", "relation": "提供产出"},
+    {"from": "work", "to": "context", "relation": "提供进展"},
+    {"from": "context", "to": "one_on_one", "relation": "进入沟通"}
+  ]
+}

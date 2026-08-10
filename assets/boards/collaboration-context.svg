@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675">
+  <defs><marker id="a" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0L8 4L0 8" fill="none" stroke="#222"/></marker></defs>
+  <rect width="1200" height="675" fill="#fff"/>
+  <g font-family="PingFang SC, Source Han Sans SC, Arial, sans-serif">
+    <text x="88" y="70" fill="#111" font-size="32" font-weight="600">共同工作，才是 1:1 的上下文</text>
+    <text x="88" y="102" fill="#666" font-size="16">只把与本次沟通相关的协作材料带入准备</text>
+    <line x1="88" y1="130" x2="1112" y2="130" stroke="#E8E8E8"/>
+    <text x="144" y="210" fill="#999" font-size="12" letter-spacing="2">共同发生</text>
+    <rect x="112" y="250" width="150" height="72" fill="#F5F5F5" stroke="#B8B8B8"/><text x="187" y="292" text-anchor="middle" fill="#111" font-size="18">共同会议</text>
+    <rect x="112" y="350" width="150" height="72" fill="#F5F5F5" stroke="#B8B8B8"/><text x="187" y="392" text-anchor="middle" fill="#111" font-size="18">共同消息</text>
+    <rect x="112" y="450" width="150" height="72" fill="#F5F5F5" stroke="#B8B8B8"/><text x="187" y="492" text-anchor="middle" fill="#111" font-size="18">共同文档</text>
+    <rect x="336" y="300" width="150" height="72" fill="#F5F5F5" stroke="#B8B8B8"/><text x="411" y="342" text-anchor="middle" fill="#111" font-size="18">任务与 OKR</text>
+    <line x1="262" y1="286" x2="520" y2="350" stroke="#222" marker-end="url(#a)"/><line x1="262" y1="386" x2="520" y2="350" stroke="#222" marker-end="url(#a)"/><line x1="262" y1="486" x2="520" y2="350" stroke="#222" marker-end="url(#a)"/><line x1="486" y1="336" x2="520" y2="350" stroke="#222" marker-end="url(#a)"/>
+    <polygon points="600,230 690,350 600,470 510,350" fill="#F5F5F5" stroke="#2F6BFF" stroke-width="1.5"/><circle cx="600" cy="350" r="42" fill="#fff" stroke="#2F6BFF" stroke-width="1.5"/><circle cx="600" cy="350" r="6" fill="#2F6BFF"/>
+    <text x="600" y="346" text-anchor="middle" fill="#111" font-size="20" font-weight="600">协作上下文</text><text x="600" y="374" text-anchor="middle" fill="#666" font-size="13">事实 · 承诺 · 阻塞</text>
+    <line x1="690" y1="350" x2="870" y2="350" stroke="#222" marker-end="url(#a)"/>
+    <circle cx="974" cy="350" r="80" fill="#fff" stroke="#2F6BFF" stroke-width="1.5"/><circle cx="974" cy="350" r="6" fill="#2F6BFF"/>
+    <text x="974" y="346" text-anchor="middle" fill="#111" font-size="22" font-weight="600">1:1 准备</text><text x="974" y="376" text-anchor="middle" fill="#666" font-size="13">问题 · 支持 · 行动</text>
+    <text x="600" y="570" text-anchor="middle" fill="#999" font-size="14">共同工作材料 → 相关事实 → 可谈问题</text>
+  </g>
+</svg>
