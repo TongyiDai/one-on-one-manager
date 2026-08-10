@@ -1,16 +1,20 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675">
-  <defs><marker id="a" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0L8 4L0 8" fill="none" stroke="#222"/></marker></defs>
+  <defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0L8 4L0 8" fill="none" stroke="#222"/></marker></defs>
   <rect width="1200" height="675" fill="#fff"/>
   <g font-family="PingFang SC, Source Han Sans SC, Arial, sans-serif">
-    <text x="88" y="70" fill="#111" font-size="32" font-weight="600">先过证据门，再进入沟通</text>
-    <text x="88" y="102" fill="#666" font-size="16">共同工作有语境，个人浏览行为没有足够语境</text>
+    <text x="88" y="70" fill="#111" font-size="32" font-weight="600">有共同语境，才成为可谈事实</text>
+    <text x="88" y="102" fill="#666" font-size="16">个人浏览留下边界，不自动进入 1:1 证据</text>
     <line x1="88" y1="130" x2="1112" y2="130" stroke="#E8E8E8"/>
-    <rect x="112" y="270" width="190" height="112" fill="#F5F5F5" stroke="#B8B8B8"/><text x="207" y="320" text-anchor="middle" fill="#111" font-size="20" font-weight="600">共同工作证据</text><text x="207" y="350" text-anchor="middle" fill="#666" font-size="13">会议 · 消息 · 文档</text>
-    <line x1="302" y1="326" x2="484" y2="326" stroke="#222" marker-end="url(#a)"/>
-    <polygon points="580,218 662,326 580,434 498,326" fill="#F5F5F5" stroke="#2F6BFF" stroke-width="1.5"/><circle cx="580" cy="326" r="40" fill="#fff" stroke="#2F6BFF" stroke-width="1.5"/><circle cx="580" cy="326" r="6" fill="#2F6BFF"/><text x="580" y="322" text-anchor="middle" fill="#111" font-size="20" font-weight="600">最小范围</text><text x="580" y="350" text-anchor="middle" fill="#666" font-size="13">对象 · 时间 · 主题</text>
-    <line x1="662" y1="326" x2="846" y2="326" stroke="#222" marker-end="url(#a)"/>
-    <circle cx="966" cy="326" r="78" fill="#fff" stroke="#2F6BFF" stroke-width="1.5"/><circle cx="966" cy="326" r="6" fill="#2F6BFF"/><text x="966" y="322" text-anchor="middle" fill="#111" font-size="22" font-weight="600">可谈事项</text><text x="966" y="352" text-anchor="middle" fill="#666" font-size="13">问题 · 支持 · 行动</text>
-    <rect x="210" y="488" width="200" height="72" fill="#fff" stroke="#B8B8B8" stroke-dasharray="6 6"/><circle cx="250" cy="524" r="6" fill="#2F6BFF"/><text x="320" y="530" text-anchor="middle" fill="#666" font-size="16">员工单独浏览</text><text x="580" y="528" fill="#999" font-size="14">默认不纳入沟通证据</text>
-    <line x1="410" y1="524" x2="790" y2="524" stroke="#B8B8B8" stroke-dasharray="6 6"/>
+    <line x1="600" y1="180" x2="600" y2="548" stroke="#222" stroke-width="1.5"/>
+    <text x="284" y="206" text-anchor="middle" fill="#999" font-size="12" letter-spacing="2">共同发生</text>
+    <text x="916" y="206" text-anchor="middle" fill="#999" font-size="12" letter-spacing="2">单独发生</text>
+    <circle cx="230" cy="290" r="7" fill="#222"/><text x="260" y="296" fill="#111" font-size="18">共同会议</text>
+    <circle cx="230" cy="380" r="7" fill="#222"/><text x="260" y="386" fill="#111" font-size="18">共同消息</text>
+    <circle cx="230" cy="470" r="7" fill="#222"/><text x="260" y="476" fill="#111" font-size="18">共同文档</text>
+    <line x1="300" y1="290" x2="496" y2="350" stroke="#222" marker-end="url(#arrow)"/><line x1="300" y1="380" x2="496" y2="350" stroke="#222" marker-end="url(#arrow)"/><line x1="300" y1="470" x2="496" y2="350" stroke="#222" marker-end="url(#arrow)"/>
+    <circle cx="548" cy="350" r="44" fill="#fff" stroke="#2F6BFF" stroke-width="1.5"/><circle cx="548" cy="350" r="7" fill="#2F6BFF"/><text x="548" y="346" text-anchor="middle" fill="#111" font-size="18" font-weight="600">可谈事实</text><text x="548" y="372" text-anchor="middle" fill="#666" font-size="12">放回原文</text>
+    <circle cx="846" cy="350" r="7" fill="#999"/><text x="880" y="356" fill="#666" font-size="18">员工单独浏览</text>
+    <line x1="846" y1="350" x2="1032" y2="350" stroke="#B8B8B8" stroke-dasharray="7 7"/><line x1="1032" y1="318" x2="1032" y2="382" stroke="#B8B8B8"/><text x="1032" y="418" text-anchor="middle" fill="#999" font-size="13">默认不纳入</text>
+    <text x="600" y="612" text-anchor="middle" fill="#999" font-size="14">左侧进入问题与支持；右侧保留为隐私边界</text>
   </g>
 </svg>

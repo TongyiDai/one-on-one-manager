@@ -1,12 +1,12 @@
 {
   "canvas": {"width": 1200, "height": 675, "ratio": "16:9", "background": "#FFFFFF", "grid": 8},
-  "intent": {"core_message": "身份和授权共同决定 1:1 助手能做什么", "composition": "layered-architecture", "focus_node": "scope"},
+  "intent": {"core_message": "默认只读，写入需要额外授权", "composition": "layered-architecture", "focus_node": "read"},
   "style": {"theme": "geometry-minimal", "accent_color": "#2F6BFF", "line_weight": 1, "corner_radius": 0},
   "nodes": [
     {"id": "identity", "type": "plane", "label": "用户身份", "importance": 3},
-    {"id": "scope", "type": "cube", "label": "最小数据范围", "importance": 5},
-    {"id": "read", "type": "plane", "label": "默认只读", "importance": 4},
-    {"id": "write", "type": "point", "label": "明确授权后写入", "importance": 4}
+    {"id": "scope", "type": "plane", "label": "最小范围", "importance": 4},
+    {"id": "read", "type": "plane", "label": "默认只读", "importance": 5},
+    {"id": "write", "type": "plane", "label": "明确授权写入", "importance": 3}
   ],
   "edges": [
     {"from": "identity", "to": "scope", "relation": "限定"},

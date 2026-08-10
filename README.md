@@ -6,6 +6,26 @@
 
 它解决的核心问题很具体：管理者知道要和员工沟通，却缺少足够的共同上下文；会议结束后有共识，却没有形成可回看的行动闭环。
 
+## 给执行 Agent 的契约
+
+`SKILL.md` 是执行入口，`agents/openai.yaml` 是运行器的 UI 元数据，`references/runtime.md` 是运行时契约。Agent 每次触发都先确认对象、时间、模式和输出用途，再校验当前飞书用户身份与租户。
+
+| 项目 | 默认规则 |
+| --- | --- |
+| 触发 | 1:1、一对一、会前准备、会后纪要、行动回看 |
+| 读取 | 当前用户有权访问的最小相关范围，默认近 30 天共同协作 |
+| 输出 | 数据范围、证据时间线、事实/表达/观察/推断/未知、1—3 项行动 |
+| 写入 | 默认关闭；写文档、建任务、改妙记、发消息需明确授权并回读 |
+| 降级 | 能力或权限不足时标记“未覆盖”，不使用 bot 或推测补齐 |
+| 目标 | 改善沟通和行动闭环，不做人事裁决或员工画像 |
+
+运行时检查：
+
+```bash
+scripts/doctor.sh --json
+python3 scripts/smoke_test.py
+```
+
 ## 它怎么工作
 
 Skill 默认读取当前用户有权访问、且与本次沟通直接相关的最小范围信息。近 30 天的共同会议、共同消息线程、共同编辑或明确共享的工作文档、相关任务和 OKR 进展，组成会前的协作上下文。
@@ -111,7 +131,11 @@ one-on-one-manager/
 ├── references/
 │   ├── feishu-routing.md
 │   ├── one-on-one-principles.md
+│   ├── runtime.md
 │   └── output-templates.md
+├── scripts/
+│   ├── doctor.sh
+│   └── smoke_test.py
 └── assets/boards/
     ├── collaboration-context.svg
     ├── evidence-gate.svg

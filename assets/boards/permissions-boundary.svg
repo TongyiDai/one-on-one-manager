@@ -1,18 +1,19 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675">
-  <defs><marker id="a" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0L8 4L0 8" fill="none" stroke="#222"/></marker></defs>
   <rect width="1200" height="675" fill="#fff"/>
   <g font-family="PingFang SC, Source Han Sans SC, Arial, sans-serif">
-    <text x="88" y="70" fill="#111" font-size="32" font-weight="600">身份和授权决定助手的边界</text>
-    <text x="88" y="102" fill="#666" font-size="16">默认只读；每一个写入动作都需要明确授权</text>
+    <text x="88" y="70" fill="#111" font-size="32" font-weight="600">默认只读，写入要先授权</text>
+    <text x="88" y="102" fill="#666" font-size="16">身份 → 范围 → 读取 → 写入，每一层都可验证</text>
     <line x1="88" y1="130" x2="1112" y2="130" stroke="#E8E8E8"/>
-    <rect x="112" y="224" width="976" height="300" fill="#fff" stroke="#B8B8B8"/>
-    <line x1="112" y1="300" x2="1088" y2="300" stroke="#E8E8E8"/><line x1="112" y1="400" x2="1088" y2="400" stroke="#E8E8E8"/>
-    <text x="152" y="272" fill="#999" font-size="12" letter-spacing="2">身份</text><text x="152" y="354" fill="#999" font-size="12" letter-spacing="2">范围</text><text x="152" y="454" fill="#999" font-size="12" letter-spacing="2">动作</text>
-    <rect x="300" y="244" width="220" height="38" fill="#F5F5F5" stroke="#B8B8B8"/><text x="410" y="269" text-anchor="middle" fill="#111" font-size="17">当前用户身份</text>
-    <rect x="300" y="324" width="220" height="52" fill="#F5F5F5" stroke="#2F6BFF"/><text x="410" y="356" text-anchor="middle" fill="#111" font-size="18" font-weight="600">对象 · 时间 · 主题</text>
-    <rect x="300" y="424" width="220" height="52" fill="#F5F5F5" stroke="#B8B8B8"/><text x="410" y="456" text-anchor="middle" fill="#111" font-size="18">默认只读</text>
-    <line x1="520" y1="263" x2="690" y2="350" stroke="#222" marker-end="url(#a)"/><line x1="520" y1="350" x2="690" y2="350" stroke="#222" marker-end="url(#a)"/><line x1="520" y1="450" x2="690" y2="350" stroke="#222" marker-end="url(#a)"/>
-    <circle cx="804" cy="350" r="76" fill="#fff" stroke="#2F6BFF" stroke-width="1.5"/><circle cx="804" cy="350" r="6" fill="#2F6BFF"/><text x="804" y="344" text-anchor="middle" fill="#111" font-size="20" font-weight="600">沟通草稿</text><text x="804" y="372" text-anchor="middle" fill="#666" font-size="13">事实 · 问题 · 行动</text>
-    <line x1="880" y1="350" x2="1010" y2="350" stroke="#222" marker-end="url(#a)"/><text x="1030" y="342" fill="#666" font-size="14">写入</text><text x="1030" y="368" fill="#2F6BFF" font-size="14">需授权</text>
+    <line x1="182" y1="548" x2="1020" y2="548" stroke="#222"/>
+    <polygon points="260,480 940,480 1000,540 200,540" fill="#F5F5F5" stroke="#B8B8B8"/>
+    <polygon points="300,400 900,400 940,460 260,460" fill="#F5F5F5" stroke="#B8B8B8"/>
+    <polygon points="340,320 860,320 900,380 300,380" fill="#F5F5F5" stroke="#2F6BFF" stroke-width="1.5"/>
+    <polygon points="380,240 820,240 860,300 340,300" fill="#fff" stroke="#B8B8B8"/>
+    <text x="600" y="276" text-anchor="middle" fill="#111" font-size="20">用户身份</text>
+    <text x="600" y="356" text-anchor="middle" fill="#111" font-size="20">对象 · 时间 · 主题</text>
+    <text x="600" y="436" text-anchor="middle" fill="#111" font-size="21" font-weight="600">默认只读</text>
+    <text x="600" y="516" text-anchor="middle" fill="#111" font-size="20">明确授权后写入</text>
+    <circle cx="600" cy="320" r="7" fill="#2F6BFF"/><line x1="600" y1="320" x2="600" y2="240" stroke="#2F6BFF" stroke-width="1.5" stroke-dasharray="7 7"/>
+    <text x="1040" y="436" fill="#2F6BFF" font-size="14">核心门槛</text><text x="1040" y="460" fill="#999" font-size="13">只读 ≠ 写入</text>
   </g>
 </svg>
