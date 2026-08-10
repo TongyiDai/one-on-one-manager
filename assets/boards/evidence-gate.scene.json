@@ -1,17 +1,15 @@
 {
   "canvas": {"width": 1200, "height": 675, "ratio": "16:9", "background": "#FFFFFF", "grid": 8},
-  "intent": {"core_message": "共同工作证据进入沟通准备，个人浏览行为留在范围外", "composition": "tension-contrast", "focus_node": "gate"},
+  "intent": {"core_message": "共同工作有证据，个人浏览没有共同语境", "composition": "tension-contrast", "focus_node": "boundary"},
   "style": {"theme": "geometry-minimal", "accent_color": "#2F6BFF", "line_weight": 1, "corner_radius": 0},
   "nodes": [
-    {"id": "shared", "type": "plane", "label": "共同工作证据", "importance": 4},
-    {"id": "gate", "type": "cube", "label": "最小范围", "importance": 5},
-    {"id": "talk", "type": "circle", "label": "可谈事项", "importance": 4},
-    {"id": "browsing", "type": "point", "label": "单独浏览", "importance": 2},
-    {"id": "boundary", "type": "frame", "label": "默认不纳入", "importance": 2}
+    {"id": "shared", "type": "point", "label": "共同工作", "importance": 4},
+    {"id": "evidence", "type": "circle", "label": "可谈事实", "importance": 5},
+    {"id": "browsing", "type": "point", "label": "个人浏览", "importance": 2},
+    {"id": "boundary", "type": "frame", "label": "默认范围边界", "importance": 4}
   ],
   "edges": [
-    {"from": "shared", "to": "gate", "relation": "筛选"},
-    {"from": "gate", "to": "talk", "relation": "形成问题"},
-    {"from": "browsing", "to": "boundary", "relation": "保留边界"}
+    {"from": "shared", "to": "evidence", "relation": "放回原文"},
+    {"from": "browsing", "to": "boundary", "relation": "默认排除"}
   ]
 }
