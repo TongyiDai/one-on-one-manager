@@ -120,6 +120,8 @@ cp -R one-on-one-manager "$CODEX_HOME/skills/one-on-one-manager"
 lark-cli auth status --json --verify
 ```
 
+支持 `auth status --json --verify` 的环境必须校验到 `identity=user`、`verified=true`。当前 CLI 构建若没有 `auth` 子命令，可退回 `contact +get-user --as user` 或 `task +get-my-tasks --as user` 做只读兼容探测；实际写文档、建任务或发消息前，仍要确认目标用户和租户。
+
 真实读取个人日程、私有文档、历史会议或聊天时，使用用户身份；企业飞书与个人飞书保持隔离。
 
 ## 文件结构

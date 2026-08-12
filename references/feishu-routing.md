@@ -16,7 +16,7 @@
 ## 身份与租户
 
 - 读取用户个人日程、私有文档、历史会议和聊天时默认使用 `--as user`。
-- 开始真实飞书读取前，执行 `lark-cli auth status --json --verify`，确认 `identity=user` 且 `verified=true`。
+- 开始真实飞书读取前，优先执行 `lark-cli auth status --json --verify`。支持该子命令的环境必须确认 `identity=user` 且 `verified=true`；当前 CLI 构建若没有 `auth` 子命令，可退回 `contact +get-user --as user` 或 `task +get-my-tasks --as user` 进入兼容只读模式。真正写文档、建任务或发消息前，仍要确认目标用户和租户。
 - 企业飞书与个人飞书必须分开；不能拿 bot 数据填充用户数据缺口。
 - 权限不足时只报告缺失范围和可行的授权路径；不要自动申请妙记或文档权限。
 

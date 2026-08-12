@@ -16,7 +16,14 @@
 lark-cli auth status --json --verify
 ```
 
-要求当前身份为用户身份且校验通过。随后按需确认 Calendar、Docs/Drive、VC/Note/Minutes、IM、Task、OKR 等领域能力是否可用。不要因为某个领域不可用，就用 bot 数据、其他员工数据或模型推测填补缺口。
+支持 `auth status --json --verify` 的环境必须要求当前身份为用户身份且校验通过。当前 CLI 构建若没有 `auth` 子命令，可退回：
+
+```bash
+lark-cli contact +get-user --as user --json
+lark-cli task +get-my-tasks --as user --json
+```
+
+`contact +get-user` 可解析当前用户；`task` 只能证明 user-context 可读。读 1:1 材料时可进入兼容只读模式，写文档、建任务、发消息或任何主体敏感动作前仍要确认目标用户和租户。随后按需确认 Calendar、Docs/Drive、VC/Note/Minutes、IM、Task、OKR 等领域能力是否可用。不要因为某个领域不可用，就用 bot 数据、其他员工数据或模型推测填补缺口。
 
 本仓库提供两个安全检查：
 
@@ -87,7 +94,7 @@ L2 的“用户明确授权”需要包含动作和目标，例如“把这份�
 
 - 本地结构：`python3 scripts/smoke_test.py`。
 - Skill 格式：使用宿主提供的 `quick_validate.py`，直到返回 `Skill is valid!`。
-- 飞书身份：`lark-cli auth status --json --verify`。
+- 飞书身份：优先 `lark-cli auth status --json --verify`；当前 CLI 构建若无 `auth` 子命令，退回 `contact +get-user --as user`，必要时再用 `task +get-my-tasks --as user` 做只读 canary。
 - 飞书写入：服务端确认字段和实际读回共同证明完成；单次提交不能当作完成。
 - 兼容性：依赖当前宿主已安装的 `lark-cli` 和领域 Skill；CLI 参数、租户能力和可见资源随版本与权限变化，执行时读取当前领域 Skill，不猜参数。
 
