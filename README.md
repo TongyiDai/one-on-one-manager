@@ -1,5 +1,12 @@
 > “The output of a manager is the output of the organizational units under his or her supervision or influence.” — Andy Grove, *High Output Management* ([source](https://openlibrary.org/books/OL3161621M/High_Output_Management))
 
+<p align="center">
+  <img src="https://img.shields.io/badge/Agent%20Skill-agentskills.io-2F6BFF" alt="Agent Skill">
+  <img src="https://img.shields.io/badge/license-MIT-3fb950" alt="License MIT">
+  <img src="https://img.shields.io/badge/python-%3E%3D3.8-3572A5" alt="Python >=3.8">
+  <img src="https://img.shields.io/badge/works%20with-Codex%20|%20Claude%20|%20Cursor%20|%20TRAE-555" alt="Works with major agents">
+</p>
+
 # 1:1 沟通助手
 
 一个面向管理者的飞书 Agent Skill：把即将发生的一次 1:1 放回双方最近的共同工作里，帮助管理者准备议程、提炼可核验事实、整理会后共识，并跟进下一步行动。
