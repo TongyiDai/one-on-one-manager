@@ -38,13 +38,13 @@ python3 scripts/smoke_test.py
 Skill 默认读取当前用户有权访问、且与本次沟通直接相关的最小范围信息。近 30 天的共同会议、共同消息线程、共同编辑或明确共享的工作文档、相关任务和 OKR 进展，组成会前的协作上下文。
 
 <p align="center">
-  <img src="assets/boards/collaboration-context.svg" alt="共同协作材料经过筛选后进入 1:1 沟通准备" width="100%" />
+  <img src="assets/boards/collaboration-context.svg?v=2" alt="共同协作材料经过筛选后进入 1:1 沟通准备" width="100%" />
 </p>
 
 它把材料整理成证据时间线，再区分事实、员工已表达、管理者观察、待验证推断和未知。原始会议表达与可定位的共同文档产出优先级更高，平台自动总结只作为索引。
 
 <p align="center">
-  <img src="assets/boards/evidence-gate.svg" alt="共同协作证据进入沟通准备，个人浏览行为留在默认范围之外" width="100%" />
+  <img src="assets/boards/evidence-gate.svg?v=2" alt="共同协作证据进入沟通准备，个人浏览行为留在默认范围之外" width="100%" />
 </p>
 
 ## 三种使用方式
@@ -83,7 +83,7 @@ Skill 默认读取当前用户有权访问、且与本次沟通直接相关的�
 ```
 
 <p align="center">
-  <img src="assets/boards/one-on-one-loop.svg" alt="1:1 从会前准备进入会中沟通、会后行动和下一次回看" width="100%" />
+  <img src="assets/boards/one-on-one-loop.svg?v=2" alt="1:1 从会前准备进入会中沟通、会后行动和下一次回看" width="100%" />
 </p>
 
 ## 飞书能力路由
@@ -146,9 +146,9 @@ one-on-one-manager/
 │   ├── doctor.sh
 │   └── smoke_test.py
 └── assets/boards/
-    ├── collaboration-context.svg
-    ├── evidence-gate.svg
-    ├── one-on-one-loop.svg
+    ├── collaboration-context.svg?v=2
+    ├── evidence-gate.svg?v=2
+    ├── one-on-one-loop.svg?v=2
     └── permissions-boundary.svg
 ```
 

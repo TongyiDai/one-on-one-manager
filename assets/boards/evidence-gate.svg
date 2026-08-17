@@ -12,7 +12,7 @@
     <circle cx="230" cy="380" r="7" fill="#222"/><text x="260" y="386" fill="#111" font-size="18">共同消息</text>
     <circle cx="230" cy="470" r="7" fill="#222"/><text x="260" y="476" fill="#111" font-size="18">共同文档</text>
     <line x1="300" y1="290" x2="496" y2="350" stroke="#222" marker-end="url(#arrow)"/><line x1="300" y1="380" x2="496" y2="350" stroke="#222" marker-end="url(#arrow)"/><line x1="300" y1="470" x2="496" y2="350" stroke="#222" marker-end="url(#arrow)"/>
-    <circle cx="548" cy="350" r="44" fill="#fff" stroke="#2F6BFF" stroke-width="1.5"/><circle cx="548" cy="350" r="7" fill="#2F6BFF"/><text x="548" y="346" text-anchor="middle" fill="#111" font-size="18" font-weight="600">可谈事实</text><text x="548" y="372" text-anchor="middle" fill="#666" font-size="12">放回原文</text>
+    <circle cx="548" cy="350" r="44" fill="#fff" stroke="#2F6BFF" stroke-width="1.5"/><text x="548" y="346" text-anchor="middle" fill="#111" font-size="18" font-weight="600">可谈事实</text><text x="548" y="372" text-anchor="middle" fill="#666" font-size="12">放回原文</text>
     <circle cx="846" cy="350" r="7" fill="#999"/><text x="880" y="356" fill="#666" font-size="18">员工单独浏览</text>
     <line x1="846" y1="350" x2="1032" y2="350" stroke="#B8B8B8" stroke-dasharray="7 7"/><line x1="1032" y1="318" x2="1032" y2="382" stroke="#B8B8B8"/><text x="1032" y="418" text-anchor="middle" fill="#999" font-size="13">默认不纳入</text>
     <text x="600" y="612" text-anchor="middle" fill="#999" font-size="14">左侧进入问题与支持；右侧保留为隐私边界</text>

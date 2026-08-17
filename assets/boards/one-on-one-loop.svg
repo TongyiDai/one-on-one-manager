@@ -8,9 +8,9 @@
     <line x1="160" y1="360" x2="1040" y2="360" stroke="#222"/>
     <path d="M262 360C310 312 362 312 410 360" fill="none" stroke="#222" marker-end="url(#arrow)"/><path d="M562 360C610 312 662 312 710 360" fill="none" stroke="#222" marker-end="url(#arrow)"/><path d="M862 360C910 312 962 312 1010 360" fill="none" stroke="#222" marker-end="url(#arrow)"/>
     <circle cx="210" cy="360" r="8" fill="#222"/><text x="210" y="296" text-anchor="middle" fill="#111" font-size="18">会前准备</text><text x="210" y="322" text-anchor="middle" fill="#999" font-size="12">范围 · 议题</text>
-    <circle cx="486" cy="360" r="58" fill="#fff" stroke="#2F6BFF" stroke-width="1.5"/><circle cx="486" cy="360" r="7" fill="#2F6BFF"/><text x="486" y="354" text-anchor="middle" fill="#111" font-size="19" font-weight="600">共同沟通</text><text x="486" y="380" text-anchor="middle" fill="#666" font-size="12">倾听 · 澄清</text>
+    <circle cx="486" cy="360" r="58" fill="#fff" stroke="#2F6BFF" stroke-width="1.5"/><text x="486" y="354" text-anchor="middle" fill="#111" font-size="19" font-weight="600">共同沟通</text><text x="486" y="380" text-anchor="middle" fill="#666" font-size="12">倾听 · 澄清</text>
     <circle cx="786" cy="360" r="8" fill="#222"/><text x="786" y="296" text-anchor="middle" fill="#111" font-size="18">行动落地</text><text x="786" y="322" text-anchor="middle" fill="#999" font-size="12">负责人 · 截止</text>
-    <circle cx="1040" cy="360" r="42" fill="#fff" stroke="#2F6BFF" stroke-width="1.5"/><circle cx="1040" cy="360" r="7" fill="#2F6BFF"/><text x="1040" y="354" text-anchor="middle" fill="#111" font-size="17" font-weight="600">下次回看</text><text x="1040" y="380" text-anchor="middle" fill="#666" font-size="12">证据 · 调整</text>
+    <circle cx="1040" cy="360" r="42" fill="#fff" stroke="#2F6BFF" stroke-width="1.5"/><text x="1040" y="354" text-anchor="middle" fill="#111" font-size="17" font-weight="600">下次回看</text><text x="1040" y="380" text-anchor="middle" fill="#666" font-size="12">证据 · 调整</text>
     <path d="M1040 414C1020 548 300 560 210 414" fill="none" stroke="#2F6BFF" stroke-width="1.5" stroke-dasharray="7 7" marker-end="url(#blueArrow)"/>
     <text x="600" y="574" text-anchor="middle" fill="#999" font-size="14">准备 → 沟通 → 行动 → 回看 → 再准备</text>
   </g>
