@@ -1,6 +1,6 @@
 > “The output of a manager is the output of the organizational units under his or her supervision or influence.” — Andy Grove, *High Output Management* ([source](https://openlibrary.org/books/OL3161621M/High_Output_Management))
 
-# 1:1 沟通助手
+<h1 align="center">1:1 沟通助手</h1>
 
 <p align="center">
   <img src="https://img.shields.io/badge/Agent%20Skill-agentskills.io-2F6BFF" alt="Agent Skill">
